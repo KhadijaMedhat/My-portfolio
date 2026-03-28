@@ -12,8 +12,7 @@ transition:.4s;
 }
 
 
-
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 .navbar{
 display:flex;
@@ -23,6 +22,12 @@ padding:25px 40px;
 max-width:1200px;
 margin:auto;
 background:transparent;
+}
+
+.nav-left{
+display:flex;
+align-items:center;
+gap:10px;
 }
 
 .navbar ul{
@@ -42,22 +47,37 @@ transition:.3s;
 color:#3b82f6;
 }
 
+.menu-btn{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:white;
+}
+
 #modeToggle{
-background:none;
+background:transparent;
 border:none;
 color:white;
-font-size:20px;
+font-size:22px;
 cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+#modeToggle:hover{
+transform:scale(1.1);
+color:#3b82f6;
 }
 
 
-
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
 min-height:90vh;
 display:flex;
 align-items:center;
+padding-top:10px;
 }
 
 .hero-container{
@@ -73,13 +93,10 @@ padding:0 20px;
 
 .hero-text{
 flex:1;
-position:relative;
 }
 
 .hero-name{
 font-size:48px;
-top:20px;
-z-index:10;
 }
 
 .typing{
@@ -108,8 +125,7 @@ box-shadow:0 8px 25px rgba(59,130,246,0.6);
 }
 
 
-
-/* PROFILE IMAGE */
+/* ================= PROFILE ================= */
 
 .hero-image{
 flex:1;
@@ -133,50 +149,48 @@ overflow:hidden;
 width:100%;
 height:100%;
 object-fit:cover;
-transform:translateY(0%);
 border-radius:inherit;
 }
 
 @keyframes glow{
-
-from{
-box-shadow:0 0 30px #3b82f6;
-}
-
-to{
-box-shadow:0 0 90px #3b82f6;
-}
-
+from{ box-shadow:0 0 30px #3b82f6; }
+to{ box-shadow:0 0 90px #3b82f6; }
 }
 
 
-
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 
 .section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-text-align:center;
+padding:100px 20px;
+scroll-margin-top:90px;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+
+text-align:center; 
 }
 
-
-
-/* SKILLS */
+/* ================= SKILLS ================= */
 
 .skills-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:25px;
-margin-top:40px;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin:100px 20px;
 }
 
 .skill{
 background:#020617;
-padding:20px;
+padding:18px;
 border-radius:10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:8px;
 transition:.3s;
 cursor:pointer;
+text-align:center;
 }
 
 .skill:hover{
@@ -185,8 +199,7 @@ box-shadow:0 10px 25px rgba(59,130,246,0.4);
 }
 
 
-
-/* PROJECTS */
+/* ================= PROJECTS ================= */
 
 .projects-grid{
 display:grid;
@@ -221,8 +234,107 @@ display:none;
 }
 
 
+/* ================= EDUCATION ================= */
 
-/* CONTACT */
+.edu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.edu-card{
+background:#020617;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.edu-card img{
+width:100%;
+height:180px;
+object-fit:contain;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.edu-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(59,130,246,0.4);
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+.exp-card{
+display:flex;
+align-items:center;
+gap:25px;
+background:#020617;
+padding:25px;
+border-radius:15px;
+margin-top:40px;
+transition:.3s;
+}
+
+.exp-card img{
+width:80px;
+}
+
+.exp-text{
+text-align:left;
+flex:1;
+}
+
+.exp-text h3{
+margin-bottom:8px;
+}
+
+.exp-text p{
+line-height:1.6;
+color:#cbd5f5;
+}
+
+.exp-card:hover{
+transform:scale(1.03);
+box-shadow:0 10px 30px rgba(59,130,246,0.4);
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.service-card{
+max-width:800px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+background:#020617;
+box-shadow:0 0 40px rgba(59,130,246,0.3);
+}
+
+.service-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+object-position:top;
+border-radius:15px;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(59,130,246,0.5);
+}
+
+
+/* ================= CONTACT ================= */
 
 .contact-grid{
 display:grid;
@@ -250,8 +362,7 @@ transform:translateY(-5px);
 }
 
 
-
-/* CTA */
+/* ================= CTA ================= */
 
 .cta{
 text-align:center;
@@ -260,6 +371,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 gap:25px;
+margin-top: 30px;
 }
 
 .big{
@@ -269,31 +381,64 @@ padding:18px 40px;
 
 
 
-/* LIGHT MODE */
-
-.light-mode{
-background:#f1f5f9;
-color:#0f172a;
+/* ================= FORM ================= */
+.form-sentence{
+text-align:center;
+margin-top:40px;
 }
 
-.light-mode .navbar a{
-color:#0f172a;
+.form-sentence h2{
+width:100%;
+}
+.contact-form{
+max-width:600px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
-.light-mode #modeToggle{
-color:#0f172a;
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+border-radius:10px;
+border:none;
+outline:none;
+background:#020617;
+color:white;
 }
 
-.light-mode .skill,
-.light-mode .project-card,
-.light-mode .contact-grid a{
-background:white;
-color:#0f172a;
+.contact-form textarea{
+min-height:120px;
+resize:none;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus{
+box-shadow:0 0 10px #3b82f6;
+}
+.send-btn{
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+border:none;
+padding:14px;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+#form-msg{
+margin-top:15px;
+font-size:14px;
+text-align:center;
+transition:.3s;
+}
 
+.send-btn:hover{
+transform:scale(1.05);
+box-shadow:0 8px 25px rgba(59,130,246,0.5);
+}
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width:900px){
 
@@ -309,6 +454,47 @@ grid-template-columns:repeat(2,1fr);
 
 @media (max-width:768px){
 
+.contact-form{
+width:90%;
+}
+
+.form-sentence h2{
+font-size:18px;
+padding:0 10px;
+}
+
+.send-btn{
+width:100%;
+}
+
+.menu-btn{
+display:block;
+}
+
+/* sidebar */
+#navLinks{
+position:fixed;
+top:0;
+left:-260px;
+width:260px;
+height:100%;
+background:rgba(2,6,23,0.7);
+backdrop-filter:blur(12px);
+flex-direction:column;
+align-items:flex-start;
+padding:80px 20px;
+gap:20px;
+transition:.3s;
+z-index:999;
+border-top-right-radius:20px;
+border-bottom-right-radius:20px;
+box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+#navLinks.active{
+left:0;
+}
+
 .hero-container{
 flex-direction:column;
 text-align:center;
@@ -319,56 +505,216 @@ order:-1;
 margin-bottom:30px;
 }
 
+.skills-grid{
+grid-template-columns:repeat(2,1fr);
+justify-content:center;
+}
+
+.contact-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.profile-glow{
+width:160px;
+height:240px;
+box-shadow:0 0 40px #3b82f6;
+}
+
+.hero-name{
+font-size:28px;
+}
+
+.hero-text h3{
+font-size:18px;
+}
+
+.hero-text p{
+font-size:14px;
+padding:0 10px;
+}
+
 }
 
 @media (max-width:500px){
 
-.projects-grid{
-grid-template-columns:1fr;
-}
-
+.projects-grid,
 .contact-grid{
 grid-template-columns:1fr;
 }
-
-}
-@media (max-width:768px){
-
-.navbar{
-padding:15px 20px;
 }
 
-.logo{
-font-size:20px;
+
+
+/* ================= LIGHT MODE CLEAN ================= */
+
+.light-mode{
+background:#f5f1ea;
+color:#3b2f2f;
 }
 
-.navbar ul{
-gap:15px;
+/* NAVBAR */
+.light-mode .navbar a{
+color:#5a4634;
+transition:.3s;
 }
 
-.navbar ul li a{
-font-size:14px;
+.light-mode .navbar a:hover{
+color:#8b5e3c;
 }
 
+.light-mode #modeToggle{
+color:#5a4634;
+}
+
+.light-mode #modeToggle:hover{
+color:#8b5e3c;
+}
+
+/* HERO */
+.light-mode .hero-text h3{
+color:#5a4634;
+}
+
+.light-mode .hero-name{
+color:#3b2f2f;
+}
+
+.light-mode .typing{
+color:#8b5e3c;
+}
+
+/* BUTTONS */
+.light-mode .btn{
+background:#8b5e3c;
+color:white;
+}
+
+.light-mode .btn:hover{
+background:#a47148;
+transform:scale(1.05);
+box-shadow:0 8px 25px rgba(139,94,60,0.4);
+color:white;
+}
+
+/* CARDS */
+.light-mode .skill,
+.light-mode .project-card,
+.light-mode .contact-grid a,
+.light-mode .edu-card,
+.light-mode .service-card,
+.light-mode .exp-card{
+background:#ffffff;
+color:#3b2f2f;
+box-shadow:0 5px 20px rgba(139,94,60,0.15);
+transition:.3s;
+}
+
+/* CARD HOVER */
+.light-mode .skill:hover,
+.light-mode .project-card:hover,
+.light-mode .edu-card:hover,
+.light-mode .service-card:hover,
+.light-mode .exp-card:hover{
+box-shadow:0 10px 30px rgba(139,94,60,0.25);
+}
+
+/* CONTACT HOVER */
+.light-mode .contact-grid a:hover{
+background:#8b5e3c;
+color:white;
+}
+
+/* FORM */
+.light-mode .contact-form input,
+.light-mode .contact-form textarea{
+background:#e7dfd5;
+color:#3b2f2f;
+}
+
+.light-mode .contact-form input::placeholder,
+.light-mode .contact-form textarea::placeholder{
+color:#8b7b6b;
+}
+
+.light-mode .contact-form input:focus,
+.light-mode .contact-form textarea:focus{
+box-shadow:0 0 10px rgba(139,94,60,0.4);
+}
+
+/* FORM MESSAGE */
+.light-mode #form-msg{
+color:#3b2f2f;
+}
+
+/* GLOW */
+.light-mode .profile-glow{
+box-shadow:0 0 40px #5c3d25;
+}
+/* ===== SIDEBAR LIGHT MODE ===== */
+.light-mode #navLinks{
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+background-color: rgba(245, 241, 234, 0.7);;
+color: #e9bc81;
+}
+
+.light-mode #navLinks a{
+color: #ad7d3f;
+}
+
+.light-mode #navLinks a:hover{
+color: #291a06; /* بيج فاتح شيك */
+}
+
+/* ===== IMAGE GLOW FIX ===== */
+
+/* دارك (زي ما هو) */
+.profile-glow{
+animation: glowDark 3s infinite alternate;
+}
+
+@keyframes glowDark{
+from{ box-shadow:0 0 30px #3b82f6; }
+to{ box-shadow:0 0 90px #3b82f6; }
+}
+
+/* لايت مود */
+.light-mode .profile-glow{
+animation: glowLight 3s infinite alternate;
+}
+
+@keyframes glowLight{
+from{ box-shadow:0 0 20px #c8a27a; }
+to{ box-shadow:0 0 60px #c8a27a; }
+}
+/* زرار المود - الشكل العام */
 #modeToggle{
-font-size:18px;
-right:15px;
-top:15px;
+font-size:22px;
+cursor:pointer;
+background:transparent;
+border:none;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.3s;
 }
 
-}
-@media (max-width:480px){
-
-.logo{
-font-size:18px;
+/* دارك مود */
+body:not(.light-mode) #modeToggle{
+color:white;
 }
 
-.navbar ul li a{
-font-size:13px;
+/* لايت مود */
+.light-mode #modeToggle{
+color:#5a4634;
 }
 
-.navbar ul{
-gap:10px;
+/* hover */
+#modeToggle:hover{
+transform:scale(1.15);
 }
 
+/* hover لايت */
+.light-mode #modeToggle:hover{
+color:#8b5e3c;
 }

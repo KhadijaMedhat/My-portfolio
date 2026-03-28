@@ -2,239 +2,274 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khadija Medhat | Frontend Developer</title>
 
-<title>Khadija Medhat | Frontend Developer</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <h2 class="logo">Khadija</h2>
+    </div>
 
-<nav class="navbar">
+    <ul id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education & Certifications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-<h2 class="logo">Khadija</h2>
-
-<ul>
-
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<button id="modeToggle">
-<i class="fa-solid fa-moon"></i>
-</button>
-
-</nav>
+    <button id="modeToggle">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </nav>
 
 
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-container">
 
-<section class="hero">
+      <div class="hero-text">
+        <h3>Hello I'm</h3>
+        <h1 class="hero-name">Khadija Medhat</h1>
+        <h2 class="typing"></h2>
 
-<div class="hero-container">
+        <p>
+          Frontend developer passionate about building modern responsive web
+          applications with beautiful UI and great user experience.
+        </p>
 
-<div class="hero-text">
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
 
-<h3>Hello I'm</h3>
+      <div class="hero-image">
+        <div class="profile-glow">
+          <img src="./photo/5863732963504229394.jpg" alt="Khadija">
+        </div>
+      </div>
 
-<h1 class="hero-name">Khadija Medhat</h1>
+    </div>
+  </section>
 
-<h2 class="typing"></h2>
 
-<p>
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
 
-Frontend developer passionate about building modern responsive web applications with beautiful UI and great user experience.
+    <p>
+      Hi! I'm Khadija Medhat, a Computer Engineering student and a Frontend Web Developer
+      who enjoys turning ideas into beautiful and interactive web experiences.
 
-</p>
+      My journey with web development started with simple curiosity — I always wondered
+      how websites actually work behind the scenes. What began as curiosity quickly turned
+      into something I genuinely enjoy doing.
 
-<a href="#projects" class="btn">View Projects</a>
+      I love transforming ideas into real, working websites using clean HTML, CSS,
+      and JavaScript.
 
+      For me, frontend development is more than just writing code — it's about creating
+      smooth and enjoyable user experiences.
+    </p>
+      <!-- ================= CTA ================= -->
+  <section class="cta">
+    <a href="#form" class="btn big">Let's work together</a>
+  </section>
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+      <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+      <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+      <div class="skill"><i class="fas fa-server"></i> Express</div>
+      <div class="skill"><i class="fas fa-database"></i> Database</div>
+    </div>
+  </section>
+
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="slider">
+          <img src="./photo/calc1.PNG" alt="">
+          <img src="./photo/calc2.PNG" alt="">
+        </div>
+        <h3>Calculator</h3>
+        <p>Responsive calculator built with JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="slider">
+          <img src="./photo/maoqe3 1.PNG" alt="">
+          <img src="./photo/maoqe3 2.PNG" alt="">
+          <img src="./photo/maoqe3 3.PNG" alt="">
+          <img src="./photo/ma0qe3 4.PNG" alt="">
+        </div>
+        <h3>Landing Page</h3>
+        <p>Modern responsive landing page.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="slider">
+          <img src="./photo/wheather2.PNG" alt="">
+          <img src="./photo/wheather3.PNG" alt="">
+          <img src="./photo/wheather4.PNG" alt="">
+        </div>
+        <h3>Weather App</h3>
+        <p>Weather application using API.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section">
+    <h2>Education & Certifications</h2>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <img src="photo/academy logo.jfif" alt="">
+        <h3>Education</h3>
+        <p>Final-year Computer Engineering student at El Shorouk Academy.</p>
+      </div>
+
+      <div class="edu-card">
+        <img src="photo/iti.jfif" alt="">
+        <h3>ITI Certification</h3>
+        <p>Angular Development Track</p>
+      </div>
+
+      <div class="edu-card">
+        <img src="photo/huawei.jfif" alt="">
+        <h3>Huawei Certification</h3>
+        <p>Big Data Track</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="exp-card">
+      <img src="photo/depi.jfif" alt="DEPI">
+
+      <div class="exp-text">
+        <h3>DEPI - Digital Egypt Pioneers Initiative</h3>
+        <p>Hands-on experience in modern web development and real-world projects.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="photo/cover for landing page.png" alt="">
+        <h3>Landing Page Development</h3>
+
+        <p>
+          I create modern, responsive, and visually appealing landing pages
+          that help businesses attract users and improve conversions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+
+      <a href="https://github.com/KhadijaMedhat" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> Github
+      </a>
+
+      <a href="https://www.linkedin.com/in/khadija-m-42b8a8266" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="https://www.upwork.com/freelancers/~01da364819f7c64cd9" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-upwork"></i> Upwork
+      </a>
+
+      <a href="https://www.freelancer.com/u/KhadijaMed" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-briefcase"></i> Freelancer
+      </a>
+
+      <a href="https://khamsat.com/user/khadijamedhat" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-store"></i> Khamsat
+      </a>
+
+      <a href="tel:+201225664903">
+        <i class="fas fa-phone"></i> Phone
+      </a>
+
+      <a href="mailto:khadijamedhat.dev@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ================= Form ================= -->
+   
+   <div id="form" class="form-sentence">
+   <h2>Your thoughts are always welcome here!</h2>
+<form id="contact-form" class="contact-form">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+
+<button type="submit" class="btn send-btn">Send Message</button>
+
+<p id="form-msg"></p>
+</form>
 </div>
 
-
-<div class="hero-image">
-
-<div class="profile-glow">
-
-<img src="./photo/5863732963504229394.jpg">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="about" class="section">
-
-<h2>About Me</h2>
-<br>
-<p>
-
-Hi! I'm Khadija Medhat, a Computer Engineering student and a Frontend Web Developer who enjoys turning ideas into beautiful and interactive web experiences.
-
-My journey with web development started with simple curiosity — I always wondered how websites actually work behind the scenes. What began as curiosity quickly turned into something I genuinely enjoy doing: building clean, responsive interfaces that make the web easier and more enjoyable to use.
-
-I love the process of transforming a design or an idea into a real, working website. From writing clean HTML and CSS to adding interactivity with JavaScript, every step feels like building something meaningful piece by piece.
-
-For me, frontend development is more than just writing code — it's about creating experiences that feel smooth, intuitive, and enjoyable for users. I'm always learning new things, experimenting with ideas, and improving my skills to become a better developer every day.
-
-</p>
-
-</section>
-
-
-
-<section id="skills" class="section">
-
-<h2>Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill"><i class="fab fa-html5"></i> HTML</div>
-<div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-<div class="skill"><i class="fab fa-js"></i> JavaScript</div>
-<div class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-<div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
-<div class="skill"><i class="fas fa-server"></i> Express</div>
-<div class="skill"><i class="fas fa-database"></i> Database</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects" class="section">
-
-<h2>Projects</h2>
-
-<div class="projects-grid">
-
-
-<div class="project-card">
-
-<div class="slider">
-
-<img src="./photo/calc1.PNG">
-<img src="./photo/calc2.PNG">
-
-</div>
-
-<h3>Calculator</h3>
-
-<p>Responsive calculator built with JavaScript.</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<div class="slider">
-
-<img src="./photo/maoqe3 1.PNG">
-<img src="./photo/maoqe3 2.PNG">
-<img src="./photo/maoqe3 3.PNG">
-<img src="./photo/ma0qe3 4.PNG">
-
-</div>
-
-<h3>Landing Page</h3>
-
-<p>Modern responsive landing page.</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<div class="slider">
-<img src="./photo/wheather2.PNG">
-<img src="./photo/wheather3.PNG">
-<img src="./photo/wheather4.PNG">
-
-</div>
-
-<h3>Weather App</h3>
-
-<p>Weather application using API.</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section id="contact" class="section">
-
-<h2>Contact</h2>
-
-<div class="contact-grid">
-
-<a href="https://github.com/KhadijaMedhat" target="_blank" rel="noopener noreferrer">
-<i class="fab fa-github"></i> Github
-</a>
-
-<a href="https://www.linkedin.com/in/khadija-m-42b8a8266" target="_blank" rel="noopener noreferrer">
-<i class="fab fa-linkedin"></i> LinkedIn
-</a>
-
-<a href="https://www.upwork.com/freelancers/~01da364819f7c64cd9?mp_source=share" target="_blank" rel="noopener noreferrer">
-<i class="fab fa-upwork"></i> Upwork
-</a>
-
-<a href="https://www.freelancer.com/u/KhadijaMed" target="_blank" rel="noopener noreferrer">
-<i class="fas fa-briefcase"></i> Freelancer
-</a>
-
-<a href="https://khamsat.com/user/khadijamedhat" target="_blank" rel="noopener noreferrer">
-<i class="fas fa-store"></i> Khamsat
-</a>
-
-<a href="tel:+201225664903">
-<i class="fas fa-phone"></i> Phone
-</a>
-
-<a href="mailto:khadijamedhat.dev@gmail.com">
-<i class="fas fa-envelope"></i> Email
-</a>
-
-</div>
-
-</section>
-
-
-
-<section class="cta">
-
-<h2>Let's Work Together</h2>
-
-<a href="mailto:khadijamedhat.dev@gmail.com" class="btn big">Hire Me</a>
-
-</section>
-
-
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
